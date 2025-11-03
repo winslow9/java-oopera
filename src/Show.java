@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Show {
-    String title;
-    Integer duration;
-    Director director;
-    ArrayList<Actor> listOfActors;
+    protected String title;
+    protected Integer duration;
+    protected Director director;
+    protected ArrayList<Actor> listOfActors;
 
 
     public Show(String title, Integer duration, Director director) {

@@ -1,12 +1,17 @@
 import java.util.ArrayList;
 
 public class Opera extends MusicalShow{
-    int choirSize;
+
+    private int choirSize;
 
     public Opera(String title, Integer duration, Director director,
-                   String musicAuthor,
+                   Person musicAuthor,
                   String librettoText, int choirSize) {
         super(title, duration, director, musicAuthor, librettoText); // вызов конструктора родительского класса
         this.choirSize = choirSize;
+    }
+
+    public int getChoirSize() {
+        return choirSize;
     }
 }

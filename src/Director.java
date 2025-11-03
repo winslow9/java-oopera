@@ -1,5 +1,7 @@
 public class Director extends Person  {
-    int numberOfShows;
+
+
+    private int numberOfShows;
 
     //Конструктор режисёра
     public Director(String name, String surname, Gender gender, int numberOfShows) {
@@ -13,5 +15,9 @@ public class Director extends Person  {
                 "Имя='" + name + '\'' +
                 ", Фамилия='" + surname + '\'' +
                 '}';
+    }
+
+    public int getNumberOfShows() {
+        return numberOfShows;
     }
 }

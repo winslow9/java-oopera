@@ -1,5 +1,5 @@
 public class Theatre {
-
+//После ревью разобью классы на пакеты
     public static void main(String[] args) {
         System.out.println("Поехали!");
         Actor actorOne = new Actor("Жмышенко","Валерий", Gender.MALE, 170);
@@ -7,9 +7,11 @@ public class Theatre {
         Actor actorThree = new Actor("Джулия","Робертс", Gender.FEMALE, 134);
         Director directorOne = new Director("Люк", "Бессон", Gender.MALE, 14);
         Director directorTwo = new Director("Тайко", "Вайтити", Gender.MALE, 2);
+        Person personChor = new Person("Хореограф", "Хореографов", Gender.MALE);
+        Person musicAuthor = new Person("Звери", "Фамилия", Gender.MALE);
         Show commonShow = new Show("Чаййка", 120, directorOne);
-        Opera operaShow = new Opera("Щелкунчик",3000, directorOne, "Шопен", "Текст либреты", 15);
-        Ballet balletShow = new Ballet("Лебединое озеро", 185, directorTwo, "Группа Звери", "Описание либреты", "Мигель");
+        Opera operaShow = new Opera("Щелкунчик",3000, directorOne, musicAuthor, "Текст либреты", 15);
+        Ballet balletShow = new Ballet("Лебединое озеро", 185, directorTwo, musicAuthor, "Описание либреты", personChor);
 
         //Распределение актёров
         commonShow.listOfActors.add(actorOne);

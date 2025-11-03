@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class MusicalShow extends Show {
-    String musicAuthor;
-    String librettoText;
+    protected Person musicAuthor;
+    private String librettoText;
 
     public MusicalShow(String title, Integer duration, Director director,
-                       String musicAuthor, String librettoText) {
+                       Person musicAuthor, String librettoText) {
         super(title, duration, director); // вызов конструктора родительского класса
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;

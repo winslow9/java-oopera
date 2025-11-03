@@ -1,5 +1,5 @@
 public class Сhoreographer extends Person {
-    boolean isСhoreographer = true;
+    private boolean isСhoreographer = true;
 
     //Конструктор режисёра
     public Сhoreographer(String name, String surname, Gender gender, int numberOfShows) {
